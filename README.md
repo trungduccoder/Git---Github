@@ -1,1 +1,1 @@
-Lean how to use Git/Github 
+Learn how to use Git/Github with me
