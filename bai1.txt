@@ -1,0 +1,38 @@
+1) cd - change directory - thay đổi thư mục
+   - cd ~ : trở về thư mục gốc.
+   - cd .. : quay về thư mục cha.
+   - cd - : quay về thư mục trước đó.
+2) dir (win) = ls (os) - list : liệt kê các tệp và thư mục
+   - dir
+   - ls
+     + ls -l ( - long format ) : hiện thị chi tiết cả ngày sửa, dung lượng( 0 - thư mục ), quyền,...
+     + ls -a ( - all format ) : hiện thị tệp ẩn.
+     + ls -la : cả hai.
+     + ls -ls : sắp xếp theo kích thước từ lớn đến bé.
+     + ls -lt : sắp xếp theo thời gian từ mới đến cũ.
+3) mkdir - make director : tạo thư mục
+   - mkdir + [Folder_name] : đối với tên không có khoảng trắng.
+   - mkdir + 'Folder name' : đối với tên có khoảng trắng.
+4) touch : tạo tên tệp tin
+   - touch [File_name], nếu đã có tệp tin trướ đó thì không thực hiện.
+5) echo : ghi/xuất lên tệp tin
+   - một dấu (< or >)
+     + echo 'content' > [File_name] : ghi đè nội dung lên tệp tin, bất kế đã có nội dung trước đó.
+     + echo 'content' < [File_name] : xuất nội dung trong tệp tin ra terminal.
+   - hai dấu ( << )
+     + echo 'content' >> [File_name] : ghi nội dung lên tệp tin, xuống dòng nếu có nội dung trước đó.
+6) rm - remote - xóa thư mục, tệp tin
+   - Tệp tin:
+     + rm [File_name] : xóa tệp tin.
+     + rm [File_name1] [File_name2]... : xóa nhiều tệp tin cùng lúc.
+     + rm *.txt : xóa tất cả các tệp tin có cùng đuôi .txt, bị lỗi nếu có đuôi .txt là thư mục.
+   - Thư mục:
+     + rmdir [Folder_name] = rm -d [Folder_name]: xóa thư mục rỗng.
+     + rm -r [Folder_name] ( - recursion ) : xóa cả thư mục và tệp con bên trong.
+7) cat - concatenate(LINUX, MacOS) : hiện thị nội dung tệp, nối tệp và tạo tệp mới 
+   - cat [File_name] : hiện thị toàn bộ nội dung tệp tin.
+   - cat [File_name1] [File_name2]... : hiện thị nội dung của nhiều tệp tin khác nhau.
+   - cat > [File_name] : tạp tệp mới, sau đó nhấn Ctrl D để lưu.
+   - cat [File_name1] [File_name2]... >> [File_name3] : cộng nội dung các tệp tin khác nhau thành duy nhất một tệp tin, có thể dùng > hoặc >>.
+   - cat -n [File_name] : đánh số dòng khi bắt đầu.
+     
